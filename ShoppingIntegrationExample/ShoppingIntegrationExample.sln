@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.30320.27
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShoppingIntegrationExample", "ShoppingIntegrationExample\ShoppingIntegrationExample.csproj", "{1522921C-535C-4428-9262-369C4CEBBE5B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntegrationCheckOut", "IntegrationCheckOut\IntegrationCheckOut.csproj", "{15A7DD0E-3086-459A-8AB4-0A7E8EBAF3E8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntegratedCheckOutTest", "IntegrationCheckOut\IntegratedCheckOutTest.csproj", "{15A7DD0E-3086-459A-8AB4-0A7E8EBAF3E8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
