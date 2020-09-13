@@ -19,7 +19,7 @@ namespace ShoppingIntegrationExample
 
             foreach (KeyValuePair<string, Item> entry in Items)
             {
-                total += entry.Value.GetPrice() + Quantities[entry.Value.GetName()];
+                total += entry.Value.GetPrice() * Quantities[entry.Value.GetName()];
             }
 
             return total;
