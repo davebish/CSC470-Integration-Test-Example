@@ -14,7 +14,7 @@ namespace IntegrationCheckOut
             const string STATE = "South Dakota";
             const decimal EXPECTED_TOTAL_WITHOUT_TAX = 1400.00M;
             const decimal EXPECTED_TAX = 63.00M;
-            const decimal EXPECTED_TOTAL_WITH_TAX = EXPECTED_TOTAL_WITHOUT_TAX + EXPECTED_TAX;
+            const decimal EXPECTED_TOTAL_DUE = EXPECTED_TOTAL_WITHOUT_TAX + EXPECTED_TAX;
             const int SHOPPER_ID = 1;
             const string SHOPPER_NAME = "Tiger";
             const string SHOPPER_STATE = STATE;
@@ -33,10 +33,10 @@ namespace IntegrationCheckOut
             shopper.Add(CallawayDriver, QUANTITY);
 
             // Act
-            decimal ActualTotalWithTax = shopper.CheckOut();
+            decimal ActualTotalDue = shopper.CheckOut();
 
             // Assert
-            Assert.AreEqual(EXPECTED_TOTAL_WITH_TAX, ActualTotalWithTax);
+            Assert.AreEqual(EXPECTED_TOTAL_DUE, ActualTotalDue);
         }
     }
 }
