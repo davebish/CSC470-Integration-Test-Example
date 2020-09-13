@@ -23,12 +23,14 @@ namespace IntegrationCheckOut
             Shopper shopper = new Shopper(SHOPPER_ID, SHOPPER_NAME, SHOPPER_STATE);
 
             const decimal CALLAWAY_IRON_PRICE = 900.00M;
-            Item CallawayIrons = new Item ("Mavrik Irons", CALLAWAY_IRON_PRICE);
+            const string CALLAWAY_IRON_NAME = "Mavrik Irons";
+            Item CallawayIrons = new Item (CALLAWAY_IRON_NAME, CALLAWAY_IRON_PRICE);
             shopper.Add(CallawayIrons, QUANTITY);
 
             const decimal CALLAWAY_DRIVER_PRICE = 500.00M;
-            Item CallawayDriver = new Item("Mavrik Driver", CALLAWAY_DRIVER_PRICE);
-            shopper.Add(CallawayIrons, QUANTITY);
+            const string CALLAWAY_DRIVER_NAME = "Mavrik Driver";
+            Item CallawayDriver = new Item(CALLAWAY_DRIVER_NAME, CALLAWAY_DRIVER_PRICE);
+            shopper.Add(CallawayDriver, QUANTITY);
 
             // Act
             decimal ActualTotalWithTax = shopper.CheckOut();
