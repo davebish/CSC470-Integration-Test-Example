@@ -1,6 +1,6 @@
 ﻿namespace ShoppingIntegrationExample
 {
-    partial class Form1
+    partial class FormNotUsed
     {
         /// <summary>
         /// Required designer variable.
